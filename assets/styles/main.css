@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: unset;
+  }
+
+  :root {
+    /*colors*/
+    --primary: #2C7EF8;
+    --primary-hover-light: #075CD9;
+    --on-primary-light: #FFFFFF;
+    --background-light: #FFFFFF;
+    --on-background-light: #191C1E;
+    --surface-light: #FFFFFF;
+    --button-about-us: #EBF3FE;
+
+  }
+
+  #section1 {
+    background-image: linear-gradient(
+      rgba(235, 243, 255, 1),
+      rgba(255, 255, 255, 1)
+    );
+  }
