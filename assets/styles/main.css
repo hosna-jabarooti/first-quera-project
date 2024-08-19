@@ -14,9 +14,18 @@
     --on-background-light: #191C1E;
     --surface-light: #FFFFFF;
     --button-about-us: #EBF3FE;
+    --text-gray: #666666;
+    --text-placeholders: #BBBBBB;
+    /* sizes  */
+    --text-size-10: 10px;
+
+
 
   }
-
+/* .figmashadow{
+  box-shadow: 0px 4px 18px 0px #1848900F;
+  ;
+} */
   #section1 {
     background-image: linear-gradient(
       rgba(235, 243, 255, 1),
