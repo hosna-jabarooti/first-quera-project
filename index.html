@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="md:mx-20">
         <section>
             <section id="section1" class="flex flex-col text-center p-10">
                 <h2 class="text-xl mt-8">تمرکز رو وارد زندگیت کن</h2>
@@ -49,72 +50,74 @@
             <p class="mb-8 text-sm p-4">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده
                 می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</p>
         </section>
-        <div class="cards-container grid grid-cols-2 grid-rows-2 gap-4 mx-4">
-            <div class="card-container flex flex-col items-center border rounded-3xl">
-                <div class="in-card-container flex flex-col items-center gap-3 py-4 px-3">
+        <div
+            class="cards-container grid grid-cols-2 grid-rows-2 gap-4 mx-4 md:grid-rows-1 md:grid-cols-4 md:gap-6 md:mb-16 md:mx-0">
+            <div class="card-container flex flex-col items-center border border-[--card-border] rounded-3xl">
+                <div class="in-card-container flex flex-col items-center">
                     <div class="flex flex-col items-center gap-1">
                         <div>
                             <img src="./assets/images/brush.png" alt="brush-icon">
                         </div>
                         <div>
-                            <h3 class="font-bold text-xs leading-5 text-nowrap">رابط کاربری جذاب</h3>
+                            <h3 class="font-bold text-xs">رابط کاربری جذاب</h3>
                         </div>
                     </div>
                     <div>
-                        <p class="text-center font-normal leading-4 text-xs">اگه از سردرگمی و بی برنامگی خسته شدی این
+                        <p class="text-center font-normal text-xs">اگه از سردرگمی و بی‌برنامگی خسته شدی این
                             اپلیکیشن
                             مخصوص خودته!</p>
                     </div>
                 </div>
             </div>
-            <div class="card-container flex flex-col items-center border rounded-3xl">
-                <div class="in-card-container flex flex-col items-center gap-3 py-4 px-3">
+            <div
+                class="card-container flex flex-col items-center border border-[--card-border] rounded-3xl shadow-[--card-shadow]">
+                <div class="in-card-container flex flex-col items-center">
                     <div class="flex flex-col items-center gap-1">
                         <div>
                             <img src="./assets/images/category.png" alt="category-icon">
                         </div>
                         <div class="">
-                            <h3 class="font-bold text-xs leading-5 text-nowrap">قابلیت دسته‌بندی کارها</h3>
+                            <h3 class="font-bold text-xs">قابلیت دسته‌بندی کارها</h3>
                         </div>
                     </div>
                     <div>
-                        <p class="text-center font-normal leading-4 text-xs">اگه از سردرگمی و بی برنامگی خسته شدی این
+                        <p class="text-center font-normal text-xs">اگه از سردرگمی و بی‌برنامگی خسته شدی این
                             اپلیکیشن
                             مخصوص
                             خودته!</p>
                     </div>
                 </div>
             </div>
-            <div class="card-container flex flex-col items-center border rounded-3xl">
-                <div class="in-card-container flex flex-col items-center gap-3 py-4 px-3">
+            <div class="card-container flex flex-col items-center border border-[--card-border] rounded-3xl">
+                <div class="in-card-container flex flex-col items-center">
                     <div class="flex flex-col items-center gap-1">
                         <div>
                             <img src="./assets/images/location-tick.png" alt="location-tick-icon">
                         </div>
                         <div>
-                            <h3 class="font-bold text-xs leading-5 text-nowrap">دسترسی آسان</h3>
+                            <h3 class="font-bold text-xs">دسترسی آسان</h3>
                         </div>
                     </div>
                     <div>
-                        <p class="text-center font-normal leading-4 text-xs">اگه از سردرگمی و بی برنامگی خسته شدی این
+                        <p class="text-center font-normal text-xs">اگه از سردرگمی و بی‌برنامگی خسته شدی این
                             اپلیکیشن
                             مخصوص
                             خودته!</p>
                     </div>
                 </div>
             </div>
-            <div class="card-container flex flex-col items-center border rounded-3xl">
-                <div class="in-card-container flex flex-col items-center gap-3 py-4 px-3">
+            <div class="card-container flex flex-col items-center border border-[--card-border] rounded-3xl">
+                <div class="in-card-container flex flex-col items-center">
                     <div class="flex flex-col items-center gap-1">
                         <div>
                             <img src="./assets/images/tag-user.png" alt="tag-user-icon">
                         </div>
                         <div>
-                            <h3 class="font-bold text-xs leading-5 text-nowrap">پشتیبانی آنلاین</h3>
+                            <h3 class="font-bold text-xs">پشتیبانی آنلاین</h3>
                         </div>
                     </div>
                     <div>
-                        <p class="text-center font-normal leading-4 text-xs">اگه از سردرگمی و بی برنامگی خسته شدی این
+                        <p class="text-center font-normal text-xs">اگه از سردرگمی و بی‌برنامگی خسته شدی این
                             اپلیکیشن
                             مخصوص
                             خودته!</p>
@@ -123,44 +126,49 @@
             </div>
 
         </div>
-        <div class="application-guidance flex flex-col my-10 mx-4 items-center">
-            <div class="flex flex-col items-center">
-                <div class="flex flex-col gap-6">
+        <div class="application-guidance flex flex-col my-10 mx-4 items-center md:flex-row md:items-start">
+
+            <div class="md:w-1/2">
+                <div class="flex flex-col gap-6 items-center md:flex-row md:items-end">
                     <div class="flex flex-col gap-2 h-14">
                         <div class="">
-                            <p class="font-normal text-xs text-center">اپلیکیشن اندروید و IOS</p>
+                            <p class="font-normal text-xs">اپلیکیشن اندروید و IOS</p>
                         </div>
                         <div class="h-8">
-                            <h2 class="font-semibold text-center text-xl">دانلود اپلیکیشن</h2>
+                            <h2 class="font-semibold text-xl">دانلود اپلیکیشن</h2>
                         </div>
                     </div>
-                    <div>
+                    <div class="md:hidden">
                         <img src="./assets/images/Mobile_clay_mockup.png" alt="mobile_clay_mockup">
                     </div>
                 </div>
-                <div>
-                    <div class="">
-                        <p class="text-center text-xs font-normal py-5 px-2">
-                            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند.
-                            همچنین
-                            کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
-                            آن
-                            استفاده نمایند.
-                            همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی
-                            بر
-                            وب آن استفاده نمایند.
-                        </p>
-                    </div>
+                <div class="">
+                    <p class="text-center text-xs font-normal py-5 px-2 md:text-right">
+                        کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند.
+                        همچنین
+                        کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                        آن
+                        استفاده نمایند.
+                        همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی
+                        بر
+                        وب آن استفاده نمایند.
+                    </p>
                 </div>
-                <div class="flex flex-row gap-4 items-center py-2 px-4">
-                    <div>
-                        <span class="font-semibold">ورود به اپلیکیشن</span>
-                    </div>
-                    <div>
-                        <img src="./assets/images/arrow-right.png" alt="arrow">
-                    </div>
+                <div class="flex flex-row gap-custom-ten py-2 px-4">
+                    <span class="font-semibold m-auto md:m-0">
+                        ورود به اپلیکیشن
+                        <img src="./assets/images/arrow-right.png" alt="arrow" class="inline">
+
+                    </span>
+
+
                 </div>
             </div>
+            <div class="hidden md:block md:w-1/2">
+                <img src="./assets/images/web-light.png" alt="mobile_clay_mockup">
+            </div>
+
+
 
         </div>
         <section class="">
@@ -280,15 +288,15 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="w-full">
+    <footer class="md:px-20" >
+        <div class="w-full md:w-1/2 md:mx-auto">
             <div class="flex items-center justify-between py-2 my-4 mx-4">
                 <div class=" flex flex-grow border-t border-gray-500"></div>
                 <span class="mx-4 font-semibold">کوئرا لیست</span>
                 <div class="flex-grow border-t border-gray-500"></div>
             </div>
         </div>
-        <div class="mx-4">
+        <div class="mx-4 md:flex md:flex-row-reverse md:my-12">
             <div class="flex flex-col">
                 <div class="flex flex-col gap-2">
                     <div>
@@ -302,7 +310,7 @@
                 <div class="my-8">
                     <div class="flex flex-row justify-between border rounded-xl p-1">
                         <input type="email" id="email-holder" placeholder="ایمیل"
-                            class="text-right py-1 pr-5 font-normal text-sm leading-4 rounded-xl w-full">
+                            class="text-right py-1 pr-5 font-normal text-sm leading-4 rounded-xl w-full md:border-[--border-footerp]">
                         <button class="bg-[--primary] text-white rounded-lg py-2 px-4 text-sm align-middle">
                             ارسال
                         </button>
@@ -310,22 +318,25 @@
                     <div></div>
                 </div>
             </div>
-            <div class="flex flex-row gap-4 font-normal text-xs">
-                <div class="flex flex-col items-center text-center w-1/2 border rounded-2xl gap-4 px-4 py-7">
-                    <img src="./assets/images/location.svg" alt="location-addres" class="w-10 h-10">
-                    <p>آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
+            <div class="flex flex-row gap-4 font-normal text-xs md:flex-col-reverse md:">
+                <div class="footer-contact flex flex-col items-center text-center w-1/2 border rounded-2xl gap-4 px-4 py-7 md:items-start md:flex-row">
+                    <img src="./assets/images/location-f.svg" alt="location-addres" class="hidden md:inline">
+                    <img src="./assets/images/location.svg" alt="location-addres" class="w-10 h-10 md:hidden">
+                    <p class="md:text-right">آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو</p>
                 </div>
                 <div class="flex flex-col gap-4 w-1/2">
-                    <div class="flex flex-row gap-2 py-7 px-4 border rounded-2xl text-nowrap">
-                        <img src="./assets/images/support-number.svg" alt="supporting-number">
-                        <div class="flex flex-col">
+                    <div class="footer-contact flex flex-row gap-2 py-7 px-4 border rounded-2xl text-nowrap">
+                        <img src="./assets/images/call.svg" alt="supporting-number" class="hidden md:inline">
+                        <img src="./assets/images/support-number.svg" alt="supporting-number" class="md:hidden">
+                        <div class="flex flex-col md:flex-row">
                             <p class="">تلفن پشتیبانی </p>
                             <p class=""> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-2 py-7 px-4 border rounded-2xl text-nowrap">
-                        <img src="./assets/images/fax.svg" alt="fax-number">
-                        <div class="flex flex-col">
+                    <div class="footer-contact flex flex-row gap-2 py-7 px-4 border rounded-2xl text-nowrap">
+                        <img src="./assets/images/fluent_fax-20-filled.svg" alt="fax-number" class="hidden md:inline">
+                        <img src="./assets/images/fax.svg" alt="fax-number" class="md:hidden">
+                        <div class="flex flex-col md:flex-row">
                             <p class="">فکس</p>
                             <p class=""> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
                         </div>
@@ -334,7 +345,8 @@
             </div>
         </div>
         <div class="my-10 px-2">
-            <p class="text-center font-normal text-sm leading-5 text-wrap text-[--text-gray]">تمامی حقوق مادی و معنوی این سایت متعلق به
+            <p class="text-center font-normal text-sm leading-5 text-wrap text-[--text-gray]">تمامی حقوق مادی و معنوی
+                این سایت متعلق به
                 کوئرا لیست
                 می‌باشد.</p>
         </div>
