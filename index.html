@@ -11,39 +11,76 @@
 </head>
 
 <body>
-    <header class="w-full bg-white flex m-1 p-3 gap-28">
-        <img src="./assets/images/Frame 12160.png" alt="hug">
-        <h1 class="flex font-medium text-lg">کوئرا لیست</h1>
-        <nav class=" hidden">
-            <ul class="flex">
-                <li>صفحه اصلی</li>
-                <li><a href="">درباره ما</a></li>
-                <li><a href="">ارتباط با ما</a></li>
-            </ul>
-            <button class="flex">ورود به اپلیکیشن</button>
-            <div class="flex">
-                <img src="./assets/images/mode.png" alt="mode">
+    <header>
+        <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4 md:px-16">
+            <div class="hidden md:flex mx-auto justify-between items-center">
+              <div>
+                <div class="flex space-x-8">
+                  <div class="text-xl font-bold ml-8 text-gray-800 dark:text-white">
+                    کوئرا لیست
+                  </div>
+                  <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">صفحه اصلی</a>
+                  <a href="./about-us.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">درباره ما</a>
+                  <a href="./contact-us.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">ارتباط با ما</a>
+                </div>
+              </div>
+        
+              <div class="flex items-center space-x-4">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none dark:bg-red-500 ml-4">
+                  ورود به اپلیکیشن
+                </button>
+        
+              <details class="relative">
+                <summary class="list-none border shadow-sm dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-lg cursor-pointer focus:outline-none">
+                  <img src="./assets/images/light-dark.png" alt="mode">
+                </summary>
+                <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-lg py-2">
+                  <a href="#" id="lightMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <img src="./assets/images/light-outline.png" class="inline" alt="light">
+                      <span class="text-sm">حالت روشن</span>
+                  </a>
+                  <a href="#" id="darkMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <img src="./assets/images/dark-outline.png" class="inline" alt="dark">
+                      <span class="text-sm">حالت تاریک</span>
+                  </a>
+                  <a href="#" id="autoMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <img src="./assets/images/light-dark.png" class="inline" alt="system">
+                      <span class="text-sm">پیروی از دستگاه</span>
+                  </a>
+                </div>
+              </details>
             </div>
+          </div>
+          <div class="flex items-center justify-between w-full md:hidden">
+            <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <img src="./assets/images/menu-icon.png" alt="menu">
+            </a>
+            
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold text-gray-800 dark:text-white">
+              کوئرا لیست
+            </div>
+          </div>
+          
         </nav>
+        <section>
+          <section id="section1" class="flex flex-col text-center p-10">
+              <h2 class="text-xl mt-8">تمرکز رو وارد زندگیت کن</h2>
+              <h3 class="mt-3 text-2xl font-semibold">به سمت اهدافت اوج بگیر</h3>
+              <p class="mt-16">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده
+                  می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</p>
+          </section>
+          <section class="flex justify-center align-center whitespace-nowrap gap-1 pt-3 mb-0">
+              <button class="m-2 bg-[--primary] text-white rounded-lg px-6 py-2">
+                  ورود به اپلیکیشن
+              </button>
+              <button class="m-2 bg-[--button-about-us] rounded-lg text-[--primary] px-14 py-2 font-medium"><a
+                      href="">درباره ما</a></button>
+          </section>
+      </section>
     </header>
     <main class="md:mx-20">
-        <section>
-            <section id="section1" class="flex flex-col text-center p-10">
-                <h2 class="text-xl mt-8">تمرکز رو وارد زندگیت کن</h2>
-                <h3 class="mt-3 text-2xl font-semibold">به سمت اهدافت اوج بگیر</h3>
-                <p class="mt-16">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده
-                    می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</p>
-            </section>
-            <section class="flex justify-center align-center whitespace-nowrap gap-1 pt-3 mb-0">
-                <button class="m-2 bg-[--primary] text-white rounded-lg px-6 py-2">
-                    ورود به اپلیکیشن
-                </button>
-                <button class="m-2 bg-[--button-about-us] rounded-lg text-[--primary] px-14 py-2 font-medium"><a
-                        href="">درباره ما</a></button>
-            </section>
-        </section>
-        <section class="w-full flex justify-center align-center">
-            <img class="w-full" src="./assets/images/image 39129.png" alt="space">
+        <section class="w-full flex justify-center align-center md:mt-20 md:mb-32">
+            <img class="w-full" src="./assets/images/app-web-light.png" alt="space">
         </section>
         <section class="flex flex-col justify-center text-center ">
             <h4 class="text-xl font-medium">ویژگی‌های اپلیکیشن کوئرالیست</h4>
@@ -171,121 +208,113 @@
 
 
         </div>
-        <section class="">
-            <div class="flex flex-col justify-center align-center text-center m-3 p-2">
+        <section>
+            <div class="md:bg-transparent bg-[--comment-background] flex flex-col justify-center align-center text-center m-3 p-2">
                 <h6 class="text-xl font-semibold">نظرات کاربران</h6>
                 <p class="text-sm mt-3">بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی
                     شوند و به اهداف خود برسند.</p>
             </div>
-            <div class="">
-                <div>
-                    <div class="flex flex-col p-3 m-4">
-                        <div class="flex align-center gap-3">
-                            <img src="./assets/images/person 1.png" alt="profile">
-                            <div class="flex flex-col mt-2">
-                                <p class="font-semibold text-base mb-1">رویا ملکی</p>
-                                <p class="text-sm">مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-sm mt-5">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
-                                اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
-                                دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
-                                اطلاعات و دیتاها لذت ببریم.
-                            </p>
-                        </div>
+            <div class="flex flex-nowrap overflow-x-auto py-4 gap-4 md:grid md:grid-cols-3">
+                <div class="flex-shrink-0 md:w-full w-64 bg-white rounded-lg shadow-md p-4 mr-4 md:mr-0">
+                  <div class="flex items-center">
+                    <img class="w-16 h-16 rounded-full" src="./assets/images/person 1.png" alt="Profile Picture">
+                    <div class="mr-custom-ten">
+                      <h2 class="text-lg font-semibold">رویا ملکی</h2>
+                      <p class="text-gray-500 text-custom-14">مهندس نرم افزار دیجی‌کالا</p>
                     </div>
-                    <div class="flex flex-col p-3 m-4">
-                        <div class="flex align-center gap-3">
-                            <img src="./assets/images/person 2.png" alt="profile">
-                            <div class="flex flex-col mt-2">
-                                <p class="font-semibold text-base mb-1">رویا ملکی</p>
-                                <p class="text-sm">مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-sm mt-5">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
-                                اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                            </p>
-                        </div>
-                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-600">
+                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
+                    اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
+                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
+                    اطلاعات و دیتاها لذت ببریم.
+                  </p>
                 </div>
-                <div>
-                    <div class="flex flex-col p-3 m-4">
-                        <div class="flex align-center gap-3">
-                            <img src="./assets/images/person 3.png" alt="profile">
-                            <div class="flex flex-col mt-2">
-                                <p class="font-semibold text-base mb-1">رویا ملکی</p>
-                                <p class="text-sm">مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-sm mt-5">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
-                                اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                            </p>
-                        </div>
+                <div class="flex-shrink-0 md:w-full w-64 bg-white rounded-lg shadow-md p-4">
+                  <div class="flex items-center">
+                    <img class="w-16 h-16 rounded-full" src="./assets/images/person 2.png" alt="Profile Picture">
+                    <div class="mr-custom-ten">
+                      <h2 class="text-lg font-semibold">رویا ملکی</h2>
+                      <p class="text-gray-500 text-custom-14">مهندس نرم افزار دیجی‌کالا</p>
                     </div>
-                    <div class="flex flex-col p-3 m-4">
-                        <div class="flex align-center gap-3">
-                            <img src="./assets/images/person 4.png" alt="profile">
-                            <div class="flex flex-col mt-2">
-                                <p class="font-semibold text-base mb-1">رویا ملکی</p>
-                                <p class="text-sm">مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-sm mt-5">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
-                                اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
-                                دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
-                                اطلاعات و دیتاها لذت ببریم.
-                            </p>
-                        </div>
-                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-600">
+                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
+                    اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
+                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
+                    اطلاعات و دیتاها لذت ببریم.
+                  </p>
                 </div>
-                <div>
-                    <div class="flex flex-col p-3 m-4">
-                        <div class="flex align-center gap-3">
-                            <img src="./assets/images/person 5.png" alt="profile">
-                            <div class="flex flex-col mt-2">
-                                <p class="font-semibold text-base mb-1">رویا ملکی</p>
-                                <p class="text-sm">مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-sm mt-5">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
-                                اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
-                                دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
-                                اطلاعات و دیتاها لذت ببریم.
-                            </p>
-                        </div>
+                <div class="flex-shrink-0 md:w-full w-64 bg-white rounded-lg shadow-md p-4">
+                  <div class="flex items-center">
+                    <img class="w-16 h-16 rounded-full" src="./assets/images/person 3.png" alt="Profile Picture">
+                    <div class="mr-custom-ten">
+                      <h2 class="text-lg font-semibold">رویا ملکی</h2>
+                      <p class="text-gray-500 text-custom-14">مهندس نرم افزار دیجی‌کالا</p>
                     </div>
-                    <div class="flex flex-col p-3 m-4">
-                        <div class="flex align-center gap-3">
-                            <img src="./assets/images/person 6.png" alt="profile">
-                            <div class="flex flex-col mt-2">
-                                <p class="font-semibold text-base mb-1">رویا ملکی</p>
-                                <p class="text-sm">مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class="text-sm mt-5">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
-                                اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                            </p>
-                        </div>
+                  </div>
+                  <p class="mt-4 text-gray-600">
+                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
+                    اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
+                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
+                    اطلاعات و دیتاها لذت ببریم.
+                  </p>
+                </div>
+                <div class="flex-shrink-0 md:w-full w-64 bg-white rounded-lg shadow-md p-4">
+                  <div class="flex items-center">
+                    <img class="w-16 h-16 rounded-full" src="./assets/images/person 4.png" alt="Profile Picture">
+                    <div class="mr-custom-ten">
+                      <h2 class="text-lg font-semibold">رویا ملکی</h2>
+                      <p class="text-gray-500 text-custom-14">مهندس نرم افزار دیجی‌کالا</p>
                     </div>
+                  </div>
+                  <p class="mt-4 text-gray-600">
+                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
+                    اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
+                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
+                    اطلاعات و دیتاها لذت ببریم.
+                  </p>
+                </div>
+                <div class="flex-shrink-0 md:w-full w-64 bg-white rounded-lg shadow-md p-4">
+                  <div class="flex items-center">
+                    <img class="w-16 h-16 rounded-full" src="./assets/images/person 5.png" alt="Profile Picture">
+                    <div class="mr-custom-ten">
+                      <h2 class="text-lg font-semibold">رویا ملکی</h2>
+                      <p class="text-gray-500 text-custom-14">مهندس نرم افزار دیجی‌کالا</p>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-600">
+                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
+                    اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
+                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
+                    اطلاعات و دیتاها لذت ببریم.
+                  </p>
+                </div>
+                <div class="flex-shrink-0 md:w-full w-64 bg-white rounded-lg shadow-md p-4">
+                  <div class="flex items-center">
+                    <img class="w-16 h-16 rounded-full" src="./assets/images/person 6.png" alt="Profile Picture">
+                    <div class="mr-custom-ten">
+                      <h2 class="text-lg font-semibold">رویا ملکی</h2>
+                      <p class="text-gray-500 text-custom-14">مهندس نرم افزار دیجی‌کالا</p>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-600">
+                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در
+                    اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان
+                    دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی
+                    اطلاعات و دیتاها لذت ببریم.
+                  </p>
                 </div>
             </div>
-            <div class="nav-buttons">
-                <button class="btn-nav btn-prev">&#129094;</button>
-
-                <button class="btn-nav btn-next">&#129092;</button>
-            </div>
+              <div class="mt-5 flex justify-center gap-4">
+                <button class="btn-nav btn-prev inline-flex bg-white p-2 border rounded-md">
+                  <img src="./assets/images/arrow-right.png" alt="arrow-right">
+                </button>
+                <button class="btn-nav btn-next inline-flex bg-white p-2 border rounded-md">
+                  <img src="./assets/images/arrow-left.png" alt="arrow-left">
+                </button>
+              </div>
+              
         </section>
     </main>
     <footer class="md:px-20" >
