@@ -30,22 +30,3 @@
 // #F8FBFF
 // #F9FBFF
 // #F8FCFF
-tailwind.config = {
-  theme: {
-    extend: {
-      fontSize: {
-        'custom-sm': '10px',
-      },
-      spacing: {
-        'custom-ten': '10px',
-        // '18': '4.5rem',  // Adds a custom spacing value for 18 (4.5rem)
-        // '22': '5.5rem',  // Adds a custom spacing value for 22 (5.5rem)
-        // '30': '7.5rem',  // Adds a custom spacing value for 30 (7.5rem)
-      },
-      height :{
-        // '266px': '266px'
-      },
-    },
-  },
-  plugins: [],
-};
