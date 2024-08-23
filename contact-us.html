@@ -11,19 +11,56 @@
 </head>
 
 <body>
-    <header class="bg-white flex m-1 py-3 px-4 gap-28 shadow-sm">
-        <img src="./assets/images/Frame 12160.png" alt="hug">
-        <h1 class="flex flex-row font-semibold text-base">کوئرا لیست</h1>
-        <nav class=" hidden">
-            <ul class="flex">
-                <li>صفحه اصلی</li>
-                <li><a href="">درباره ما</a></li>
-                <li><a href="">ارتباط با ما</a></li>
-            </ul>
-            <button class="flex">ورود به اپلیکیشن</button>
-            <div class="flex">
-                <img src="./assets/images/mode.png" alt="mode">
+    <header>
+        <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4 md:px-16">
+            <div class="hidden md:flex mx-auto justify-between items-center">
+              <div>
+                <div class="flex space-x-8">
+                  <div class="text-xl font-bold ml-8 text-gray-800 dark:text-white">
+                    کوئرا لیست
+                  </div>
+                  <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">صفحه اصلی</a>
+                  <a href="./about-us.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">درباره ما</a>
+                  <a href="./contact-us.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">ارتباط با ما</a>
+                </div>
+              </div>
+        
+              <div class="flex items-center space-x-4">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none dark:bg-red-500 ml-4">
+                  ورود به اپلیکیشن
+                </button>
+        
+              <details class="relative">
+                <summary class="list-none border shadow-sm dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-lg cursor-pointer focus:outline-none">
+                  <img src="./assets/images/light-dark.png" alt="mode">
+                </summary>
+                <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-lg py-2">
+                  <a href="#" id="lightMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <img src="./assets/images/light-outline.png" class="inline" alt="light">
+                      <span class="text-sm">حالت روشن</span>
+                  </a>
+                  <a href="#" id="darkMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <img src="./assets/images/dark-outline.png" class="inline" alt="dark">
+                      <span class="text-sm">حالت تاریک</span>
+                  </a>
+                  <a href="#" id="autoMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                      <img src="./assets/images/light-dark.png" class="inline" alt="system">
+                      <span class="text-sm">پیروی از دستگاه</span>
+                  </a>
+                </div>
+              </details>
             </div>
+          </div>
+          <div class="flex items-center justify-between w-full md:hidden">
+            <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <img src="./assets/images/menu-icon.png" alt="menu">
+            </a>
+            
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold text-gray-800 dark:text-white">
+              کوئرا لیست
+            </div>
+          </div>
+          
         </nav>
     </header>
     <main>
