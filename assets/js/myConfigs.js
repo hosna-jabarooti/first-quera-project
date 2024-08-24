@@ -35,7 +35,7 @@ tailwind.config = {
       },
       height: {
         // '266px': '266px'
-          'custom-cir': '450px'
+        'custom-cir': '450px'
       },
       width: {
         'custom-cir': '450px'
@@ -59,3 +59,5 @@ tailwind.config = {
   },
   plugins: [],
 };
+
+

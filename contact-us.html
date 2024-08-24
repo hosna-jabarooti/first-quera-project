@@ -7,60 +7,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./myConfigs.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4 md:px-16">
             <div class="hidden md:flex mx-auto justify-between items-center">
-              <div>
-                <div class="flex space-x-8">
-                  <div class="text-xl font-bold ml-8 text-gray-800 dark:text-white">
+                <div>
+                    <div class="flex space-x-8">
+                        <div class="text-xl font-bold ml-8 text-gray-800 dark:text-white">
+                            کوئرا لیست
+                        </div>
+                        <a href="./index.html"
+                            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">صفحه
+                            اصلی</a>
+                        <a href="./about-us.html"
+                            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">درباره
+                            ما</a>
+                        <a href="./contact-us.html"
+                            class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">ارتباط با
+                            ما</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none dark:bg-red-500 ml-4">
+                        ورود به اپلیکیشن
+                    </button>
+
+                    <details class="relative">
+                        <summary
+                            class="list-none border shadow-sm dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-lg cursor-pointer focus:outline-none">
+                            <img src="./assets/images/light-dark.png" alt="mode">
+                        </summary>
+                        <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-lg py-2">
+                            <a href="#" id="lightMode"
+                                class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                                <img src="./assets/images/light-outline.png" class="inline" alt="light">
+                                <span class="text-sm">حالت روشن</span>
+                            </a>
+                            <a href="#" id="darkMode"
+                                class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                                <img src="./assets/images/dark-outline.png" class="inline" alt="dark">
+                                <span class="text-sm">حالت تاریک</span>
+                            </a>
+                            <a href="#" id="autoMode"
+                                class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
+                                <img src="./assets/images/light-dark.png" class="inline" alt="system">
+                                <span class="text-sm">پیروی از دستگاه</span>
+                            </a>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="flex items-center justify-between w-full md:hidden">
+                <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                    <img src="./assets/images/menu-icon.png" alt="menu">
+                </a>
+
+                <div
+                    class="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold text-gray-800 dark:text-white">
                     کوئرا لیست
-                  </div>
-                  <a href="./index.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">صفحه اصلی</a>
-                  <a href="./about-us.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">درباره ما</a>
-                  <a href="./contact-us.html" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">ارتباط با ما</a>
                 </div>
-              </div>
-        
-              <div class="flex items-center space-x-4">
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none dark:bg-red-500 ml-4">
-                  ورود به اپلیکیشن
-                </button>
-        
-              <details class="relative">
-                <summary class="list-none border shadow-sm dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-lg cursor-pointer focus:outline-none">
-                  <img src="./assets/images/light-dark.png" alt="mode">
-                </summary>
-                <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-lg py-2">
-                  <a href="#" id="lightMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <img src="./assets/images/light-outline.png" class="inline" alt="light">
-                      <span class="text-sm">حالت روشن</span>
-                  </a>
-                  <a href="#" id="darkMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <img src="./assets/images/dark-outline.png" class="inline" alt="dark">
-                      <span class="text-sm">حالت تاریک</span>
-                  </a>
-                  <a href="#" id="autoMode" class="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600">
-                      <img src="./assets/images/light-dark.png" class="inline" alt="system">
-                      <span class="text-sm">پیروی از دستگاه</span>
-                  </a>
-                </div>
-              </details>
             </div>
-          </div>
-          <div class="flex items-center justify-between w-full md:hidden">
-            <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-              <img src="./assets/images/menu-icon.png" alt="menu">
-            </a>
-            
-            <div class="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold text-gray-800 dark:text-white">
-              کوئرا لیست
-            </div>
-          </div>
-          
+
         </nav>
     </header>
     <main>
@@ -119,7 +130,8 @@
                             <img src="./assets/images/sms.svg" alt="email-icon" class="hidden md:inline">
                             <div class="">
                                 <p class="font-bold text-xs leading-4 text-right md:hidden">ایمیل</p>
-                                <span class="font-normal leading-4 text-right text-custom-sm md:font-semibold md:text-lg">QueraList@gmail.com</span>
+                                <span
+                                    class="font-normal leading-4 text-right text-custom-sm md:font-semibold md:text-lg">QueraList@gmail.com</span>
                             </div>
                         </div>
                         <div class="flex flex-row gap-3 border rounded-xl py-3 px-2 w-full h-14 md:border-none">
@@ -127,20 +139,22 @@
                             <img src="./assets/images/call-desc.svg" alt="phone-icon" class="hidden md:inline">
                             <div class="">
                                 <p class="font-bold text-xs leading-4 text-right md:hidden">تلفن</p>
-                                <span class="font-normal leading-4 text-right text-custom-sm md:font-semibold md:text-lg">09121234567</span>
+                                <span
+                                    class="font-normal leading-4 text-right text-custom-sm md:font-semibold md:text-lg">09121234567</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <div class="flex flex-row border rounded-xl gap-4 py-3 px-2 mx-4 justify-center md:mt-auto md:border-none md:justify-start">
-                        <img src="./assets/images/github.svg" alt="github-icon" class="px-2 md:hidden">
-                        <img src="./assets/images/mark-github.svg" alt="github-icon" class="hidden md:inline md:px-2">
-                        <img src="./assets/images/twitter.svg" alt="twitter-icon" class="px-2 md:hidden">
-                        <img src="./assets/images/mark-twitter.svg" alt="twitter-icon" class="hidden md:inline md:px-2">
-                        <img src="./assets/images/linkedin.svg" alt="linkedin-icon" class="px-2 md:hidden">
-                        <img src="./assets/images/mark-linkedin.svg" alt="linkedin-icon" class="hidden md:inline md:px-2">
-                    </div>
-                
+                <div
+                    class="flex flex-row border rounded-xl gap-4 py-3 px-2 mx-4 justify-center md:mt-auto md:border-none md:justify-start">
+                    <img src="./assets/images/github.svg" alt="github-icon" class="px-2 md:hidden">
+                    <img src="./assets/images/mark-github.svg" alt="github-icon" class="hidden md:inline md:px-2">
+                    <img src="./assets/images/twitter.svg" alt="twitter-icon" class="px-2 md:hidden">
+                    <img src="./assets/images/mark-twitter.svg" alt="twitter-icon" class="hidden md:inline md:px-2">
+                    <img src="./assets/images/linkedin.svg" alt="linkedin-icon" class="px-2 md:hidden">
+                    <img src="./assets/images/mark-linkedin.svg" alt="linkedin-icon" class="hidden md:inline md:px-2">
+                </div>
+
             </div>
             <div class="contact-form md:flex md:flex-col border rounded-2xl gap-6 p-2 mx-4 mt-2 hidden md:w-1/2 ">
                 <div class="flex flex-col gap-4 relative">
@@ -246,4 +260,7 @@
                 می‌باشد.</p>
         </div>
     </footer>
+    <script src="./assets/js/myConfigs.js"></script>
+    <script src="./assets/js/darkmode.js"></script>
 </body>
+</html>
