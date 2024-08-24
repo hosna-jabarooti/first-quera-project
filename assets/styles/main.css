@@ -7,7 +7,6 @@
 
   :root {
     /*colors*/
-
     --primary: #2C7EF8;
     --primary-hover-light: #075CD9;
     --on-primary-light: #FFFFFF;
@@ -25,20 +24,10 @@
     --comment-background: #f8f8f8;
     --about-us-border: #F5F6F8;
     --about-us-tile-background: #F9FAFB;
-    
-
-    
-    /* sizes  */
-    --text-size-10: 10px;
     /* shadows */
     --card-shadow: box-shadow: 0px 4px 63px 0px #00000008;
-
   }
 
-/* .figmashadow{
-  box-shadow: 0px 4px 18px 0px #1848900F;
-  ;
-} */
   #section1 {
     background-image: linear-gradient(
       rgba(235, 243, 255, 1),
@@ -50,6 +39,30 @@
   }
   .in-card-container p{
     color: var(--text-gray-p);
+  }
+  .circle1{
+    border-radius: 50%;
+    background: linear-gradient(162.19deg, rgba(239, 235, 255, 0) 32.45%, #EBEBFB 79.35%);
+    box-shadow: -3px 4px 16px 0px #00000000;
+    transform: rotate(180deg);
+    opacity: 50%;
+  }
+  .circle2{
+    border-radius: 50%;
+    background: linear-gradient(162.19deg, rgba(239, 235, 255, 0) 32.45%, #EBEBFB 79.35%);
+    box-shadow: -3px 4px 16px 0px #00000000;
+    transform: rotate(180deg);
+    opacity: 50%;
+  }
+  @media (max-width:768px){
+    #section1 {
+      overflow: hidden;
+    }
+    .vector-line{
+      width: 102px;
+      height: 22px;
+      transform: rotate(2.5deg);
+    }
   }
   @media (min-width:640px){
     .card-container{
@@ -113,5 +126,29 @@
       border-radius: 0px;
       padding-right: 32px;
     }
+    .circle1{
+      border-radius: 50%;
+      background: linear-gradient(160.99deg, rgba(239, 235, 255, 0) 29.95%, #E0EDFF 78.88%);
+      box-shadow: -3px 4px 16px 0px #00000000;
+      transform: rotate(180deg);
+      opacity: 60%;
+    }
+    .circle2{
+      border-radius: 50%;
+      background: linear-gradient(162.19deg, rgba(239, 235, 255, 0) 32.45%, #EBEBFB 79.35%);
+      box-shadow: -3px 4px 16px 0px #00000000;
+      transform: rotate(180deg);
+      opacity: 50%;
+    }
+    .circle3{
+      border-radius: 50%;
+      background: linear-gradient(162.19deg, rgba(239, 235, 255, 0) 32.45%, #EBEBFB 79.35%);
+      box-shadow: -3px 4px 16px 0px #00000000;
+      transform: rotate(180deg);
+      opacity: 20%;
+    }
+    .vector-line{
+      transform: rotate(-1deg);
+    }
   }
-  
+ 
