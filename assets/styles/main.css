@@ -1,8 +1,16 @@
+@font-face {
+  font-family: iranyekan;
+  src: local("iranyekan"),
+    url(../fonts/iranyekanwebregular.e31c09af.woff2) format("woff2"),
+    url(../fonts/iranyekanwebmedium.2d4f96e5.woff) format("woff2"),
+    url(../fonts/iranyekanwebbold.cfb6e26c.woff2) format("woff2");
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: unset;
+    font-family: iranyekan, sans-serif, IRANYEKAN;
   }
 
   :root {
@@ -16,6 +24,7 @@
     --button-about-us: #EBF3FE;
     --text-gray: #666666;
     --text-gray-p: #444749;
+    --text-black: #141414;
     --text-bold: #070D31;
     --text-placeholders: #BBBBBB;
     --card-border: #F5F6F8;
@@ -147,8 +156,19 @@
       transform: rotate(180deg);
       opacity: 20%;
     }
+    .circle4{
+      border-radius: 50%;
+      background: linear-gradient(162.19deg, rgba(239, 235, 255, 0) 32.45%, #EBEBFB 79.35%);
+      box-shadow: -3px 4px 16px 0px #00000000;
+      transform: rotate(180deg);
+      opacity: 60%;
+    }
     .vector-line{
       transform: rotate(-1deg);
+    }
+    .myCardShadow{
+      box-shadow: 0px 4px 63px 0px #0000000A;
+
     }
   }
  
