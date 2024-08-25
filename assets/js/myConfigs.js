@@ -42,7 +42,7 @@ tailwind.config = {
       },
       colors: {
         dark: {
-          "primary": "#3A86F8",
+          primary: "#3A86F8",
           "primary-hover-dark": "#6BA4FA",
           "background-dark": "#040810",
           "on-background-dark": "#E6E9EF",
@@ -53,6 +53,8 @@ tailwind.config = {
           "about-bg": "#122549",
           "card-bg": "#0B192D",
           "about-me-card": "#0E1E34",
+          "white-text": "#E6E6E6",
+          "custom-gray": "#B5B5B5",
         },
       },
     },

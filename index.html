@@ -19,7 +19,7 @@
               کوئرا لیست
             </div>
             <a href="./index.html"
-              class="text-base font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">صفحه
+              class="text-base font-semibold text-[--primary] dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">صفحه
               اصلی</a>
             <a href="./about-us.html"
               class="text-base font-semibold text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">درباره
@@ -32,14 +32,15 @@
 
         <div class="flex items-center space-x-4">
           <button
-            class="text-base font-medium bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none dark:bg-red-500 ml-4">
+            class="text-base font-medium bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none dark:bg-primary ml-4">
             ورود به اپلیکیشن
           </button>
 
           <details class="relative z-20">
             <summary
               class="list-none border shadow-sm dark:bg-gray-700 text-gray-800 dark:text-white p-2 rounded-lg cursor-pointer focus:outline-none">
-              <img src="./assets/images/light-dark.png" alt="mode">
+              <img src="./assets/images/light-dark.png" alt="mode" class="dark:hidden">
+              <img src="./assets/images/dark-outline.svg" alt="mode" class=" hidden dark:inline">
             </summary>
             <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-lg py-2">
               <a href="#" id="lightMode"
@@ -348,29 +349,29 @@
 
     </section>
   </main>
-  <footer class="md:px-20">
+  <footer class="md:px-20 dark:bg-black">
     <div class="w-full md:w-1/2 md:mx-auto">
       <div class="flex items-center justify-between py-2 my-4 mx-4">
-        <div class=" flex flex-grow border-t border-gray-500"></div>
-        <span class="mx-4 font-semibold">کوئرا لیست</span>
-        <div class="flex-grow border-t border-gray-500"></div>
+        <div class=" flex flex-grow border-t border-gray-500 dark:border-white"></div>
+        <span class="mx-4 font-semibold dark:text-[#FFFFFF]">کوئرا لیست</span>
+        <div class="flex-grow border-t border-gray-500 dark:border-white"></div>
       </div>
     </div>
     <div class="mx-4 md:flex md:flex-row-reverse md:my-12 md:justify-evenly">
       <div class="flex flex-col">
         <div class="flex flex-col gap-2">
           <div>
-            <h5 class="text-sm font-bold md:text-base">با ما در ارتباط باش</h5>
+            <h5 class="text-sm font-bold dark:text-[#FFFFFF]">با ما در ارتباط باش</h5>
           </div>
           <div>
-            <p class="text-xs font-normal">اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+            <p class="text-xs font-normal dark:text-[#FFFFFF]">اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
               بشی.</p>
           </div>
         </div>
         <div class="my-8">
           <div class="flex flex-row justify-between border rounded-xl p-1">
             <input type="email" id="email-holder" placeholder="ایمیل"
-              class="text-right py-1 pr-5 font-normal text-sm leading-4 rounded-xl w-full md:border-[--border-footerp]">
+              class="text-right py-1 pr-5 font-normal text-sm leading-4 rounded-xl w-full md:border-[--border-footerp] dark:border-[#A1A1A1] dark:bg-black">
             <button class="bg-[--primary] text-white rounded-lg py-2 px-4 text-sm align-middle">
               ارسال
             </button>
@@ -381,33 +382,36 @@
       <div class="flex flex-row gap-4 font-normal text-xs md:flex-col-reverse md:">
         <div
           class="footer-contact flex flex-col items-center text-center w-1/2 border rounded-2xl gap-4 px-4 py-7 md:items-start md:flex-row">
-          <img src="./assets/images/location-f.svg" alt="location-addres" class="hidden md:inline">
-          <img src="./assets/images/location.svg" alt="location-addres" class="w-10 h-10 md:hidden">
-          <p class="md:text-right text-custom-sm md:text-sm">آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان
-            صبحدل- بن بست شب بو</p>
+          <img src="./assets/images/location-f.svg" alt="location-addres" class="hidden md:inline dark:hidden">
+          <img src="./assets/images/location.svg" alt="location-addres" class="w-10 h-10 md:hidden dark:hidden">
+          <img src="./assets/images/fuent-location.svg" alt="location-addres" class=" md:hidden dark:inline">
+          <p class="md:text-right dark:text-[#FFFFFF]">آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+          </p>
         </div>
         <div class="flex flex-col gap-4 w-1/2">
           <div class="footer-contact flex flex-row gap-2 py-7 px-4 border rounded-2xl text-nowrap">
-            <img src="./assets/images/call.svg" alt="supporting-number" class="hidden md:inline">
-            <img src="./assets/images/support-number.svg" alt="supporting-number" class="md:hidden">
+            <img src="./assets/images/call.svg" alt="supporting-number" class="hidden md:inline dark:hidden">
+            <img src="./assets/images/support-number.svg" alt="supporting-number" class="md:hidden dark:hidden">
+            <img src="./assets/images/fluent-call.svg" alt="supporting-number" class="md:hidden dark:inline">
             <div class="flex flex-col md:flex-row">
-              <p class="text-custom-sm md:text-sm">تلفن پشتیبانی </p>
-              <p class="text-custom-sm md:text-sm"> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+              <p class="dark:text-[#FFFFFF]">تلفن پشتیبانی </p>
+              <p class="dark:text-[#FFFFFF]"> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
             </div>
           </div>
           <div class="footer-contact flex flex-row gap-2 py-7 px-4 border rounded-2xl text-nowrap">
-            <img src="./assets/images/fluent_fax-20-filled.svg" alt="fax-number" class="hidden md:inline">
-            <img src="./assets/images/fax.svg" alt="fax-number" class="md:hidden">
+            <img src="./assets/images/fluent_fax-20-filled.svg" alt="fax-number" class="hidden md:inline dark:hidden">
+            <img src="./assets/images/fax.svg" alt="fax-number" class="md:hidden dark:hidden">
+            <img src="./assets/images/fluent_fax-20-filled (1).svg" alt="fax-number" class="md:hidden dark:inline">
             <div class="flex flex-col md:flex-row">
-              <p class="text-custom-sm md:text-sm">فکس</p>
-              <p class="text-custom-sm md:text-sm"> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+              <p class="dark:text-[#FFFFFF]">فکس</p>
+              <p class="dark:text-[#FFFFFF]"> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="my-10 px-2">
-      <p class="text-center font-normal text-sm leading-5 text-wrap text-[--text-gray]">تمامی حقوق مادی و معنوی
+      <p class="text-center font-normal text-sm leading-5 text-wrap text-[--text-gray] dark:text-[#DFDFDF]">تمامی حقوق مادی و معنوی
         این سایت متعلق به
         کوئرا لیست
         می‌باشد.</p>
