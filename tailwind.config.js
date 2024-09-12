@@ -1,8 +1,11 @@
 module.exports = {
-content : ["./index.html", "./about-us.html", "./contact-us.html"],
+  content: ["./index.html", "./about-us.html", "./contact-us.html"],
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        'YekanBakh': ['YekanBach', 'Yekan', 'sans-serif']
+      },
       fontSize: {
         'custom-sm': '10px',
         'custom-4xl': '40px',
@@ -56,13 +59,17 @@ content : ["./index.html", "./about-us.html", "./contact-us.html"],
           "about-me-card": "#0E1E34",
           "white-text": "#E6E6E6",
           "custom-gray": "#B5B5B5",
-          "light-gray": "#ACACAC",  
+          "light-gray": "#ACACAC",
           "tile-background": "#0E1E34",
           "input-border": "#A1A1A1",
           "copy-right": "#DFDFDF",
           "medium-gray": "#DEDEDE",
           "card-border": "#293242"
         },
+      },
+      backgroundImage: {
+        'dark-gradient': 'linear-gradient(180deg, rgba(2, 103, 255, 0.25) -25.32%, rgba(26, 32, 44, 0) 88.96%)',
+        'light-gradient': 'linear-gradient(rgba(235, 243, 255, 1),rgba(255, 255, 255, 1))'
       },
     },
   },

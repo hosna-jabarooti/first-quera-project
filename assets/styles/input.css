@@ -5,18 +5,17 @@
 
 /* Add any custom styles below */
 @font-face {
-    font-family: iranyekan;
-    src: local("iranyekan"),
-      url(../fonts/iranyekanwebregular.e31c09af.woff2) format("woff2"),
-      url(../fonts/iranyekanwebmedium.2d4f96e5.woff) format("woff2"),
-      url(../fonts/iranyekanwebbold.cfb6e26c.woff2) format("woff2");
-  }
+  font-family: "YekanBach";
+  src: url("../fonts/Yekan\ Bakh\ Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
   * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       outline: unset;
-      font-family: iranyekan, sans-serif, IRANYEKAN;
+      font-family: YekanBach;
     }
   
     :root {
@@ -43,12 +42,20 @@
       --card-shadow: box-shadow: 0px 4px 63px 0px #00000008;
     }
   
-    #section1 {
+    /* #section1 {
       background-image: linear-gradient(
         rgba(235, 243, 255, 1),
         rgba(255, 255, 255, 1)
       );
-    }
+    } */
+    /* @media (prefers-color-scheme: dark) {
+      #section1 {
+        background-image: linear-gradient( 
+          rgba(2, 103, 255, 0.25) -25.32%, 
+          rgba(26, 32, 44, 0) 88.96%
+        );
+      }
+    } */
     .in-card-container h3{
       color: var(--text-bold);
     }
@@ -177,4 +184,10 @@
   
       }
     }
+    /* @media (prefers-color-scheme: dark){
+      #section1{
+        background: linear-gradient(180deg, rgba(2, 103, 255, 0.25) -25.32%, rgba(26, 32, 44, 0) 88.96%);
+
+      }
+    } */
    
